@@ -9,6 +9,8 @@
     To run server in dev mode: npm || yarn run server
     To run client: npm || yarn run start --prefix client
     To run both: npm || yarn run dev
+### To run tests:
+    npm run test
 ### Note:
     In order to run app correctly you need to add dev.js to config folder.
     Which has to contain GoogleClientID,GoogleClientSecret(for Oath in Google).
