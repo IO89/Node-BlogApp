@@ -1,5 +1,6 @@
 ### Blog App
     This blog app is build on top of NodeJS with Express on server side and React for client side.
+    Uses Redux for state management and Redis for server caching.
 ### How to install app:
     npm i || yarn 
     cd client && npm i || yarn
