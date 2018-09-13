@@ -2,5 +2,5 @@ node_modules
 nohup.out
 .DS_Store
 .idea/
-config/dev.js
+dev.js
 package-lock.json
