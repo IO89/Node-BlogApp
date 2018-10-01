@@ -28,9 +28,13 @@ class CustomPage {
         // Set cookie and signature for auth
         await this.page.setCookie({name:'session', value:session});
         await this.page.setCookie({name:'session.sig', value:sig});
-        await this.page.goto('http://localhost:3000/');
+        await this.page.goto('http://localhost:3000/blogs');
         // Need to wait for element
         await this.page.waitFor('a[href="/auth/logout"]');
+    }
+
+    async getContentsOf(selector){
+        return this.page.$eval(selector,el=>el.innerHTML);
     }
 }
 
