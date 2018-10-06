@@ -2,7 +2,7 @@
 language: node_js
 # choose version of node
 node_js:
-  - 8
+  - 9
 # Use ligth version of linux os
 dist: trusty
 # Specify services
@@ -11,7 +11,8 @@ services:
   - redis-server
 # Declare env variables
 env:
-  - NODE_ENV=ci PORT=3000
+  - NODE_ENV=ci
+  - PORT=3000
 # Cache static folders
 cache:
   directories:
@@ -23,6 +24,6 @@ install:
   - npm build
 # npm start with no hang up and allowing using command line/wait for 3 seconds for server start
 script:
-  - nohup npm run dev &
+  - nohup npm run start &
   - sleep 3
   - npm run test
