@@ -11,8 +11,7 @@ services:
   - redis-server
 # Declare env variables
 env:
-  - NODE_ENV=ci
-  - PORT=3000
+  - NODE_ENV=ci PORT=3000
 # Cache static folders
 cache:
   directories:
