@@ -23,6 +23,6 @@ install:
   - npm build
 # npm start with no hang up and allowing using command line/wait for 3 seconds for server start
 script:
-  - nohup npm run start &
+  - nohup npm run dev &
   - sleep 3
   - npm run test
