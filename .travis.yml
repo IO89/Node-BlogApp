@@ -2,8 +2,8 @@
 language: node_js
 # choose version of node
 node_js:
-  - 8
-# Use ligth version of linux os
+  - "8"
+# Use light version of linux os
 dist: trusty
 # Specify services
 services:
@@ -20,7 +20,7 @@ cache:
 # run commands to build prod version
 install:
   - npm install
-  - npm build
+  - npm run build
 # npm start with no hang up and allowing using command line/wait for 3 seconds for server start
 script:
   - nohup npm run start &
