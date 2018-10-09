@@ -4,3 +4,4 @@ nohup.out
 .idea/
 config/dev.js
 package-lock.json
+dev.js
